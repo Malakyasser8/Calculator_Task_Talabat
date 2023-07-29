@@ -1,0 +1,12 @@
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\bin\Debug\net6.0\CalculatorServices.deps.json
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\bin\Debug\net6.0\CalculatorServices.dll
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\bin\Debug\net6.0\CalculatorServices.pdb
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\CalculatorServices.csproj.AssemblyReference.cache
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\CalculatorServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\CalculatorServices.AssemblyInfoInputs.cache
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\CalculatorServices.AssemblyInfo.cs
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\CalculatorServices.csproj.CoreCompileInputs.cache
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\CalculatorServices.dll
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\refint\CalculatorServices.dll
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\CalculatorServices.pdb
+C:\Users\malak\Desktop\Talabat Change Names\Calculator_Task_Talabat\CalculatorServices\obj\Debug\net6.0\ref\CalculatorServices.dll

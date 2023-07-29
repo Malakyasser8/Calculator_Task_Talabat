@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeService", "PrimeService\PrimeService.csproj", "{D4E035D4-0322-4389-8F80-62A3ED6AAEB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorServices", "CalculatorServices\CalculatorServices.csproj", "{D4E035D4-0322-4389-8F80-62A3ED6AAEB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeService.Tests", "PrimeService.Tests\PrimeService.Tests.csproj", "{2F2CA16E-B4DB-49CA-A142-7B48F6C8A61B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorServices.Tests", "CalculatorServices.Tests\CalculatorServices.Tests.csproj", "{2F2CA16E-B4DB-49CA-A142-7B48F6C8A61B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
