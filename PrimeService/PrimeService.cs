@@ -10,15 +10,10 @@ namespace Prime.Services
                 return 2;
             else if (num1 == 1 && num2 == 5)
                 return 6;
-            int resultInt = num1 + num2;
-            long resultLong = num1 + num2;
-            if(resultInt != resultLong)
+
+            checked
             {
-                throw new OverflowException();
-            }
-            else
-            {
-                return resultInt;
+                return num1 + num2;
             }
 
         }

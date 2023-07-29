@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cPZ0Q8v0Tej9tyuxrEvbrwjmTwJxzV4psZQC/H9/t9Vqt6B6VioSXD0SK1dFbURIhy80hgpdyxkWWlcFAJaKdg==",
+  "success": true,
+  "projectFilePath": "/home/amir/Desktop/talabat_tasks/testing_task/Calculator_Task_Talabat/PrimeService/PrimeService.csproj",
+  "expectedPackageFiles": [
+    "/home/amir/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.20/microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

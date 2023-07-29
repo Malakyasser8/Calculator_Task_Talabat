@@ -60,27 +60,14 @@ namespace Prime.UnitTests.Services
         }
 
         [Test]
-        public void ExeptionFunc()
+        public void Add_InputIs2147483647and2147483647_ReturnException()
         {
-            OverflowException exception = Assert.Throws<OverflowException>(() =>
+            Assert.Throws<OverflowException>(() =>
             {
                 var result = _primeService.Add(2147483647, 2147483647);
             });
-            Assert.IsInstanceOf(exception, typeof(OverflowException));
+
         }
-
-        // [Test]
-        // public void Add_InputIs2147483647and2147483647_ReturnException()
-        // {
-        //     Assert.Throws<OverflowException>(() =>
-        //     {
-        //         var result = _primeService.Add(2147483647, 2147483647);
-        //     });
-
-        // }
-        // [TestCase(1)]
-        // [TestCase(1)]
-        // [TestCase(1)]
 
     }
 }
