@@ -6,33 +6,22 @@ namespace Calculator.UnitTests.Services
     [TestFixture]
     public class CalculatorServices_TestOperations
     {
-        private CalculatorServices _primeService;
+        private CalculatorServices CalculatorObj;
 
         [SetUp]
         public void SetUp()
         {
-            _primeService = new CalculatorServices();
+            CalculatorObj = new CalculatorServices();
         }
         /*********Add Testcases**************/
-        [Test]
-        public void Add_InputIs1and1_Return2()
+        [TestCase(1, 1, 2)]
+        [TestCase(7, 5, 12)]
+        [TestCase(6, 9, 15)]
+        public void Add_Testing(int FirstNum, int SecondNum, int ActualResult)
         {
-            var result = _primeService.Add(1, 1);
-            Assert.AreEqual(result, 2);
+            var ExpectedResult = CalculatorObj.Add(FirstNum, SecondNum);
 
-        }
-        [Test]
-        public void Add_InputIs1and5_Return6()
-        {
-            var result = _primeService.Add(1, 5);
-            Assert.AreEqual(result, 6);
-
-        }
-        [Test]
-        public void Add_InputIs6and4_Return10()
-        {
-            var result = _primeService.Add(6, 4);
-            Assert.AreEqual(result, 10);
+            Assert.AreEqual(ActualResult, ExpectedResult);
 
         }
         [Test]
@@ -40,96 +29,68 @@ namespace Calculator.UnitTests.Services
         {
             Assert.Throws<OverflowException>(() =>
             {
-                var result = _primeService.Add(2147483647, 2147483647);
+                var result = CalculatorObj.Add(2147483647, 2147483647);
             });
 
         }
         /*********Subtract Testcases**************/
-        [Test]
-        public void Subtract_InputIs1and1_Return0()
+        [TestCase(1, 1, 0)]
+        [TestCase(6, 10, -4)]
+        [TestCase(-5, 4, -9)]
+        public void Subtract_Testing(int FirstNum, int SecondNum, int ActualResult)
         {
-            var result = _primeService.Subtract(1, 1);
-            Assert.AreEqual(result, 0);
+            var ExpectedResult = CalculatorObj.Subtract(FirstNum, SecondNum);
+            Assert.AreEqual(ActualResult, ExpectedResult);
 
         }
-        [Test]
-        public void Subtract_InputIs9and5_Return4()
-        {
-            var result = _primeService.Subtract(9, 5);
-            Assert.AreEqual(result, 4);
-
-        }
-
-        [Test]
-        public void Subtract_InputIs6and4_Return2()
-        {
-            var result = _primeService.Subtract(6, 4);
-            Assert.AreEqual(result, 2);
-
-        }
-
         [Test]
         public void Subtract_InputIsNeg2147483647and2147483647_ReturnException()
         {
             Assert.Throws<OverflowException>(() =>
             {
-                var result = _primeService.Subtract(-2147483647, 2147483647);
+                var result = CalculatorObj.Subtract(-2147483647, 2147483647);
             });
 
         }
 
         /*********Divide Testcases**************/
-        [Test]
-        public void Divide_InputIs14and2_Return7()
+        [TestCase(2, 1, 2)]
+        [TestCase(10, 5, 2)]
+        [TestCase(7, 2, 3)]
+        public void Divide_Testing(int FirstNum, int SecondNum, int ActualResult)
         {
-            var result = _primeService.Divide(14, 2);
-            Assert.AreEqual(result, 7);
+            var ExpectedResult = CalculatorObj.Divide(FirstNum, SecondNum);
+            Assert.AreEqual(ActualResult, ExpectedResult);
 
         }
-
         [Test]
-        public void Divide_InputIs9and4_Return2()
-        {
-            var result = _primeService.Divide(9, 4);
-            Assert.AreEqual(result, 2);
-
-        }
-
-        [Test]
-        public void Divide_InputIs3and0_ThrowsException()
+        public void Divide_InputIs5and0_ReturnDivideByZeroException()
         {
             Assert.Throws<DivideByZeroException>(() =>
             {
-                var result = _primeService.Divide(3, 0);
+                var result = CalculatorObj.Divide(5, 0);
             });
 
         }
 
         /*********Multiply Testcases**************/
-        [Test]
-        public void Multiply_InputIs9and4_Return36()
+        [TestCase(2, 1, 2)]
+        [TestCase(6, 6, 36)]
+        [TestCase(4, 4, 16)]
+        public void Multiply_Testing(int FirstNum, int SecondNum, int ActualResult)
         {
-            var result = _primeService.Multiply(9, 4);
-            Assert.AreEqual(result, 36);
+            var ExpectedResult = CalculatorObj.Multiply(FirstNum, SecondNum);
+            Assert.AreEqual(ActualResult, ExpectedResult);
 
         }
-
         [Test]
-        public void Multiply_InputIsNeg7and5_ReturnNeg35()
+        public void Multiply_InputIs2147483647and2147483647_ReturnException()
         {
-            var result = _primeService.Multiply(-7, 5);
-            Assert.AreEqual(result, -35);
-
-        }
-
-        [Test]
-        public void Multiply_InputIs2147483647and2147483647_ThrowsOverflowException()
-        {
-
             Assert.Throws<OverflowException>(() =>
             {
-                var result = _primeService.Multiply(2147483647, 2147483647);
+                var result = CalculatorObj.Multiply(2147483647, 2147483647);
             });
+
         }
 
     }
